@@ -89,6 +89,12 @@ h2{
     border-bottom-left-radius: 30px;
 }
 
+/* Estilo específico para o botão com ID 'btnref' */
+#btnref{
+    width: 500px;
+    background-color: yellowgreen;
+}
+
 /* Efeito de hover para botões */
 .btn:hover{
     background-color: var(--cor1);

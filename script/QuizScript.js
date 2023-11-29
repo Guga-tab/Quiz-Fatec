@@ -45,5 +45,5 @@ var x4 = parseInt(sessionStorage.getItem('res4'));
 var x5 = parseInt(sessionStorage.getItem('res5'));
 var x6 = parseInt(sessionStorage.getItem('res6'));
 var x7 = parseInt(sessionStorage.getItem('res7'));
-p.innerHTML = `Você acertou: ${(x1+x2+x3+x4+x5+x6+x7)}`; 
+p.innerHTML = `Você acertou: ${(x1+x2+x3+x4+x5+x6+x7)} de 7`; 
 }

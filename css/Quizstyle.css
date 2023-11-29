@@ -122,6 +122,11 @@ label{
     color: #ffffff;
 }
 
+/* Estilo para a abreviação ADS */
+#ads{
+    font-size: 0.57em;
+}
+
 /* Estilo para botões */
 .btn{
     background-color: var(--cor2);
