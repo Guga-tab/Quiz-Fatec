@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Configurando a exibição inicial e a escala do dispositivo para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Incluindo o arquivo de estilo externo para estilizar o formulário -->
+    <link rel="stylesheet" href="../css/FormStyle.css">
+
+    <!-- Definindo o ícone da guia do navegador -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5184/5184592.png" type="image/x-icon">
+
+    <!-- Título da página exibido na guia do navegador -->
+    <title>Formulário</title>
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Cabeçalho do formulário -->
+        <header>Atualize seus dados</header>
+
+        <!-- Formulário de atualização de dados -->
+        <form id="form" action="../Quiz/pgfinal.html" method="get">
+
+            <!-- Campo de entrada para o nome -->
+            <label for="iname" class="lres">Nome:</label>
+            <input type="text" id="iname" name="name" placeholder="Digite seu nome completo" required>
+            
+            <!-- Campo de entrada para o email -->
+            <label for="iemail" class="lres">Email:</label>
+            <input type="email" id="iemail" name="email" placeholder="Digite o email" autocomplete="email" required maxlength="40" >
+
+            <!-- Campo de entrada para a senha -->
+            <label for="isenha" class="lres">Senha:</label>
+            <input type="password" id="isenha" name="senha" placeholder="Digite sua senha"  autocomplete="current-password" required minlength="8" maxlength="20" >
+
+            <!-- Campo de confirmação da senha -->
+            <label for="csenha">Confirmar senha:</label>
+            <input type="password" id="csenha" name="senha" placeholder="Digite novamente a senha" autocomplete="current-password" required minlength="8" maxlength="20" >
+
+            <!-- Botão de confirmação para enviar o formulário -->
+            <input type="submit" value="Confirmar" id="btn" onclick="atualizar()">
+         
+        </form>
+    </div>
+
+    <!-- Incluindo script externo para funcionalidades do formulário -->
+    <script src="../script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Resetando margens e preenchimentos padrão */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Definindo variáveis de cor e fonte no root */
+:root {
+    --cor1: #36F1CD;
+    --cor2: #39A0ED;
+    --cor3: #4C6085;
+    --fonte1: 'Ubuntu', sans-serif;
+}
+
+/* Estilo geral do corpo da página */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(53, 53, 53, 0.897);
+}
+
+/* Estilo para cabeçalho de nível 1 */
+h1{
+    text-align: center;
+    margin-top: 15px;
+    color: whitesmoke;
+}
+
+/* Estilo para o container principal */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/* Estilo para rótulos (labels) */
+label{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* Estilo para spans dentro de rótulos com classe 'resSpan' */
+.resSpan{
+    font-size: 16px;
+}
+
+/* Estilo para spans dentro de rótulos com classe 'P3Span' */
+.P3Span{
+    font-size: 16px;
+}
+
+/* Estilização dos Radio buttons com a classe 'radio' */
+/* Referência: https://pt.stackoverflow.com/questions/470987/personalizar-input-radio */
+.container,
+.P3radio {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+.container:after,
+.P3radio:after {
+    content: "";
+    clear: both;
+}
+
+/* Estilo para Radio buttons */
+.radio,
+.P3radio {
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    float: left;
+    height: 70px;
+    position: relative;
+    width: 180px;
+}
+
+.radio + .radio,
+.P3radio + .P3radio {
+    margin-left: 25px;
+}
+
+.radio label,
+.P3radio label {
+    background: #fff no-repeat center center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.radio label span,
+.P3radio label span {
+    z-index: 1;
+}
+
+.radio label input[type=radio],
+.P3radio label input[type=radio] {
+    all: unset;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.radio label input[type=radio]:checked,
+.P3radio label input[type=radio]:checked {
+    background-color: var(--cor1);
+}
+
+.radio label input[type=radio]:checked + span,
+.P3radio label input[type=radio]:checked + span {
+    color: #ffffff;
+}
+
+/* Estilo para botões */
+.btn{
+    background-color: var(--cor2);
+    padding: 15px;
+    border: solid 2px ;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px;
+    font-size: 1.4em;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+
+/* Efeito de hover para botões */
+.btn:hover{
+    background-color: var(--cor1);
+}
+
+/* Estilo para links dentro de botões */
+.btn a{
+    text-decoration: none;
+    color: black;
+}

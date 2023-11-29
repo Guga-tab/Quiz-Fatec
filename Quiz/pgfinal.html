@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Configurando a exibição inicial e a escala do dispositivo para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Incluindo o arquivo de estilo externo para estilizar a página final -->
+    <link rel="stylesheet" href="../css/pgfinal.css">
+
+    <!-- Definindo o ícone da guia do navegador -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5184/5184592.png" type="image/x-icon">
+
+    <!-- Título da página exibido na guia do navegador -->
+    <title>Quiz FATEC</title>
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="container">
+      <!-- Título da página final -->
+      <h1>Página da FATEC para fazer sua inscrição</h1>
+
+      <!-- Subtítulo com instruções sobre os dados utilizados anteriormente -->
+      <h2>Com os seus dados utilizados anteriormente:</h2>
+
+      <!-- Parágrafo para exibir os dados, a ser preenchido dinamicamente pelo script -->
+      <p id="dados"></p>
+
+      <!-- Botão para redirecionar para a página de inscrição -->
+      <a href="https://www.vestibularfatec.com.br/candidato/dados-acesso.asp?t=IN"><button class="btn">Clique aqui</button></a>
+      
+      <!-- Subtítulo sobre a possibilidade de dados incorretos -->
+      <h2>Dados errados?</h2>
+
+      <!-- Botão para atualizar dados -->
+      <a href="../Form/AtualDados.html"><button class="btn">Clique aqui para atualizar dados</button></a>
+
+      <!-- Botão para excluir dados e inserir novos -->
+      <a href="../Form/Form.html"><button class="btn" onclick="del()">Clique aqui para excluir dados, e inserir novos!</button></a>
+
+      <!-- Botão para ver o resultado do quiz -->
+      <button class="btn" id="btnResult" onclick="result()">Ver resultado</button>
+    </div>
+
+    <!-- Parágrafo para exibir a mensagem de acertos, a ser preenchido dinamicamente pelo script -->
+    <p id="acertou"></p>
+    
+    <!-- Incluindo scripts externos para funcionalidades do quiz -->
+    <script src="../script/QuizScript.js"></script>
+    <script src="../script/ExibirDados.js"></script>
+    <script src="../script/script.js"></script>
+</body>
+</html>

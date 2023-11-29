@@ -1,0 +1,85 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Resetando margens, preenchimentos e caixas de modelagem para todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo variáveis de cor e fonte */
+:root {
+    --cor1: #36F1CD;   /* Cor principal */
+    --cor2: #39A0ED;   /* Cor secundária */
+    --cor3: #4C6085;   /* Cor de fundo do contêiner */
+    --fonte1: 'Ubuntu', sans-serif;   /* Fonte principal */
+}
+
+/* Estilizando o corpo da página */
+body{
+    font-family: var(--fonte1);
+    background-color: rgba(53, 53, 53, 0.897);   /* Cor de fundo da página */
+}
+
+/* Estilizando o cabeçalho principal */
+h1{
+    text-align: center;
+    padding: 15px;
+    color: yellow;   /* Cor do texto */
+}
+
+/* Estilizando o contêiner principal */
+.container{
+    display: flex;
+    width: 500px;
+    flex-flow: nowrap column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 0px 4px 17px #000000c7;   /* Sombra */
+    overflow: hidden;
+    margin: 15px auto 0 auto;
+    background-color: var(--cor3);
+}
+
+/* Estilizando imagens dentro do contêiner */
+img{
+    width: 400px;
+    height: 350px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+/* Estilizando resultados dentro do contêiner */
+#res1, #res2{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Estilizando o botão dentro do contêiner */
+#btn{
+    padding: 15px;
+    width: 500px;
+    border: solid 0px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0px 0px 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--cor1); 
+    transition: 0.5s ;
+}
+
+/* Estilizando o botão ao passar o mouse sobre ele */
+#btn:hover{
+    background-color: white;
+}
+
+/* Estilizando links dentro do botão */
+#btn a{
+    text-decoration: none;
+    color: black;
+}

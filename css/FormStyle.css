@@ -1,0 +1,111 @@
+/* Definindo o conjunto de caracteres como UTF-8 */
+@charset "UTF-8";
+
+/* Importando fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Sriracha&family=Ubuntu&display=swap');
+
+/* Definições gerais de estilo para redefinir margens, preenchimentos e caixas */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo variáveis de cores e fontes no root */
+:root {
+    --cor1: #36F1CD;
+    --cor2: #39A0ED;
+    --cor3: #4C6085;
+    --fonte1: 'Ubuntu', sans-serif;
+}
+
+/* Estilo do corpo da página */
+body{
+    background-color: rgba(53, 53, 53, 0.897);
+}
+
+/* Estilo do cabeçalho principal (h1) */
+h1{
+    padding: 5px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: var(--fonte1);
+}
+
+/* Efeito de hover para o h1 */
+h1:hover{
+    color: yellow;
+    transition: 0.5s;
+}
+
+/* Estilo do container principal */
+.container{
+    background-color: var(--cor3) ;
+    border-radius: 30px;
+    box-shadow: 0px 4px 17px #000000c7;
+    overflow: hidden;
+    margin: 15px auto;
+    width: 400px;
+    height: 560px;
+}
+
+/* Estilo do cabeçalho dentro do container */
+header{
+    font-size: 2em;
+    padding: 5px 0 5px 16px;
+    background-color: var(--cor1);
+    width: 480px;
+    font-family: var(--fonte1);
+}
+
+/* Estilo do formulário dentro do container */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    margin-top: 15px;
+}
+
+/* Estilo das etiquetas de rótulo */
+label{
+    font-family: var(--fonte1);
+    font-size: 1.3em;
+    margin-right: 178px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilo específico para a etiqueta com a classe lres */
+.lres{
+    margin-right: 270px;
+}
+
+/* Estilo para as entradas de texto */
+input{
+    width: 89%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 5px;
+}
+
+/* Efeito de foco nas entradas de texto */
+input:focus{
+    color: black;
+}
+
+/* Estilo do botão de submissão */
+input#btn{
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s ;
+}
+
+/* Efeito de hover para o botão de submissão */
+input#btn:hover{
+    background-color: var(--cor1);
+}

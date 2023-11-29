@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Configurando a exibição inicial e a escala do dispositivo para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Incluindo os arquivos de estilo externo para estilizar a página -->
+    <link rel="stylesheet" href="../css/Quizstyle.css">
+    <link rel="stylesheet" href="../css/TempStyle.css">
+
+    <!-- Definindo o ícone da guia do navegador -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5184/5184592.png" type="image/x-icon">
+
+    <!-- Título da página exibido na guia do navegador -->
+    <title>Quiz FATEC</title>
+</head>
+<body>
+    <!-- Pergunta do quiz -->
+    <h1>Por quantas questões compõe o vestibular da FATEC?</h1>
+
+    <!-- Container para opções de resposta usando botões de rádio -->
+    <div class="container">
+        <div class="radio">
+          <label>
+            <input type="radio" name="q" id="P4q1">
+            <span>90</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="q" id="P4q2">
+            <span>54</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="q" id="P4q3">
+            <span>72</span>
+          </label>
+        </div>
+    </div>
+
+    <!-- Container para o botão "Responder" que redireciona para a próxima pergunta -->
+    <div class="container">
+        <a href="P5.html"><button class="btn" onclick="submitQuiz4()">Responder</button></a>
+    </div>
+
+    <!-- Temporizador -->
+    <div id="js_timer">
+      <div id="timer">
+        15
+      </div>
+    </div>
+
+    <!-- Incluindo scripts externos para funcionalidades do quiz -->
+    <script src="../script/QuizScript.js"></script>
+    <script src="../script/TempScript.js"></script>
+</body>
+</html>

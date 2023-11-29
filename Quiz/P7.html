@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Configurando a exibição inicial e a escala do dispositivo para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Incluindo os arquivos de estilo externo para estilizar a página -->
+    <link rel="stylesheet" href="../css/Quizstyle.css">
+    <link rel="stylesheet" href="../css/TempStyle.css">
+
+    <!-- Definindo o ícone da guia do navegador -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5184/5184592.png" type="image/x-icon">
+
+    <!-- Título da página exibido na guia do navegador -->
+    <title>Quiz FATEC</title>
+</head>
+<body>
+    <!-- Pergunta do quiz -->
+    <h1>Qual é o curso com a menor demanda do vestibular de 2023?</h1>
+
+    <!-- Container para opções de resposta usando botões de rádio -->
+    <div class="container">
+        <div class="P3radio">
+          <label>
+            <input type="radio" name="q" id="P7q1">
+            <span class="P3Span">Processos Químicos</span>
+          </label>
+        </div>
+        <div class="P3radio">
+          <label>
+            <input type="radio" name="q" id="P7q2">
+            <span class="P3Span">Comércio Exterior</span>
+          </label>
+        </div>
+        <div class="P3radio">
+          <label>
+            <input type="radio" name="q" id="P7q3">
+            <span class="P3Span">Gestão Empresarial</span>
+          </label>
+        </div>
+    </div>
+
+    <!-- Container para o botão "Finalizar" que redireciona para a página final do quiz -->
+    <div class="container">
+        <a href="pgfinal.html"><button class="btn" onclick="submitQuiz7()">Finalizar</button></a>
+    </div>
+
+    <!-- Temporizador -->
+    <div id="js_timer">
+      <div id="timer">
+        15
+      </div>
+    </div>
+
+    <!-- Incluindo scripts externos para funcionalidades do quiz -->
+    <script src="../script/QuizScript.js"></script>
+    <script src="../script/TempScript.js"></script>
+</body>
+</html>

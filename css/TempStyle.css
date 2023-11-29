@@ -1,0 +1,16 @@
+/* Estilização da caixa do temporizador */
+#js_timer {
+    text-align: center;
+  }
+
+  /* Estilização do temporizador */
+  #timer{
+    background: #4C6085;
+    border: solid 2px ;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.7em;
+   
+    width: 100px;
+    margin: 50px auto;
+  }

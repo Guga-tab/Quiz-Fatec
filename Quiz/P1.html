@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres UTF-8 para suportar caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Configurando a exibição inicial e a escala do dispositivo para responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Incluindo os arquivos de estilo externo para estilizar a página -->
+    <link rel="stylesheet" href="../css/Quizstyle.css">
+    <link rel="stylesheet" href="../css/TempStyle.css">
+
+    <!-- Definindo o ícone da guia do navegador -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5184/5184592.png" type="image/x-icon">
+
+    <!-- Título da página exibido na guia do navegador -->
+    <title>Quiz FATEC</title>
+</head>
+<body>
+
+    <!-- Pergunta do quiz -->
+    <h1>Quantos cursos são oferecidos na Fatec do Estado de SP?</h1>
+
+    <!-- Container para opções de resposta usando botões de rádio -->
+    <div class="container">
+        <div class="radio">
+          <label>
+            <input type="radio" name="q" value="10" id="P1q1">
+            <span>10</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="q" value="250" id="P1q2">
+            <span>250</span>
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="q" value="94" id="P1q3">
+            <span>94</span>
+          </label>
+        </div>
+    </div>
+
+    <!-- Container para o botão "Responder" que redireciona para a próxima pergunta -->
+    <div class="container">
+        <a href="P2.html"><button class="btn" onclick="submitQuiz()">Responder</button></a>
+    </div>
+
+    <!-- Contador de tempo para o quiz -->
+    <div id="js_timer">
+      <div id="timer">
+        15
+      </div>
+    </div>
+
+    <!-- Incluindo scripts externos para funcionalidades do quiz -->
+    <script src="../script/QuizScript.js"></script>
+    <script src="../script/TempScript.js"></script>
+</body>
+</html>
